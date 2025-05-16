@@ -14,9 +14,9 @@ VALUES ('rs1Aed', 'https://www.reddit.com/', 1, TIMESTAMP '2025-01-05',
        ('vbgtyh', 'https://github.com/', 1, TIMESTAMP '2025-04-19',
         NULL, FALSE, 0),
        ('rtyfgb', 'https://www.andrewhoblit.com/', 1, TIMESTAMP '2025-05-25',
-        NULL, FALSE, 0),
+        NULL, TRUE, 0),
        ('rtvbop', 'https://github.com/A-Hoblit', 1,TIMESTAMP '2025-06-26',
-        NULL, FALSE, 0),
+        NULL, TRUE, 0),
        ('2wedfg', 'https://www.linkedin.com/in/andrew-hoblit/', 1, TIMESTAMP '2025-11-27',
         NULL,TRUE, 0)
 ;

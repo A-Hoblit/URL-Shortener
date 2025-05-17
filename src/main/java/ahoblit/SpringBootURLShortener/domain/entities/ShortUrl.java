@@ -27,6 +27,10 @@ public class ShortUrl {
     @Column(name = "expires_at")
     private Instant expiresAt;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "created_by")
+    private User createdBy;
+
     @ColumnDefault("0")
     @Column(name = "click_count", nullable = false)
     private Long clickCount;
@@ -73,6 +77,14 @@ public class ShortUrl {
 
     public void setExpiresAt(Instant expiresAt) {
         this.expiresAt = expiresAt;
+    }
+
+    public User getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(User createdBy) {
+        this.createdBy = createdBy;
     }
 
     public Long getClickCount() {
